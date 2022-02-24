@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Registration form</h3>
+        <form action="">
+            <div class="slider">
+                <div class="slide first" data-slide_nr="0" data-set="" data-value="">
+                    <p class="message">Fallow next steps to complete registration.</p>
+                </div>
+                <div class="slide" data-slide_nr="1" data-set="" data-value="">
+                    <input type="text" name="firstname" placeholder="Firstname" oninput="func1()" required />
+                </div>
+                <div class="slide" data-slide_nr="2" data-set="" data-value="">
+                    <input type="text" name="lastname" placeholder="Lastname" oninput="func1()" required />
+                </div>
+                <div class="slide" data-slide_nr="3" data-set="" data-value="">
+                    <input type="email" name="email" placeholder="Email" oninput="func1()" required />
+                </div>
+                <div class="slide last" data-slide_nr="4" data-set="" data-value="">
+                    <p class="message">Thank you for your registration!</p>
+                    <ul>
+                        <li data-name="firstname"></li>
+                        <li data-name="lastname"></li>
+                        <li data-name="email"></li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="prev">Previus</button>
+                    <button type="button" class="next">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
